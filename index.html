@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Quarterly Earnings Report – Interactive RevealJS Deck</title>
+    <title>Quarterly Earnings Report – RevealJS Presentation</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -10,12 +10,12 @@
     <link rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css" />
 
-    <!-- Theme (pick any: black, white, league, beige, sky, night, serif, simple, solarized) -->
+    <!-- Theme -->
     <link rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/black.css"
       id="theme" />
 
-    <!-- Code syntax highlighting theme -->
+    <!-- Code syntax highlighting -->
     <link rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/monokai.css" />
   </head>
@@ -23,167 +23,112 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <!-- Slide 1: Title slide with email and speaker notes -->
+
+        <!-- Slide 1 -->
         <section>
           <h1>Quarterly Earnings Report</h1>
-          <h3>Technical Consultant – Major Financial Institution</h3>
-          <p>
-            Presented by:
-            <strong>Shubhangi Sharma</strong><br />
-            Email:
-            <a href="mailto:22f2000167@ds.study.iitm.ac.in">
-              22f2000167@ds.study.iitm.ac.in
-            </a>
-          </p>
+          <h3>Prepared by Technical Consultant</h3>
+
+          <p><strong>Name:</strong> Shubhangi Sharma</p>
+
+          <!-- Required visible email -->
+          <p><strong>Email: 22f2000167@ds.study.iitm.ac.in</strong></p>
 
           <aside class="notes">
-            Introduce yourself, your role as a technical consultant, and explain
-            that this deck showcases modern, interactive presentation features
-            (Markdown, code, math, fragments, etc.) for earnings stakeholders.
+            Introduce yourself and explain purpose of this report.
           </aside>
         </section>
 
-        <!-- Slide 2: Markdown slide -->
+        <!-- Markdown Slide -->
         <section data-markdown>
           <textarea data-template>
-## Business Highlights (Markdown Slide)
+## 📌 Business Snapshot (Markdown Slide)
 
-- **Revenue growth**: 12% year-on-year (YoY)  
-- **Net profit margin**: 18%  
-- **Earnings Per Share (EPS)**: `₹ 23.5`  
-- **Return on Equity (ROE)** improving trend  
+- Revenue Growth: **12% YoY**
+- Net Profit: **₹225 Cr**
+- EPS Increased: **₹23.5**
+- Strong Market Confidence  
+- Improved Operational Efficiency
 
-> This entire slide is written in Markdown.
+> This slide is written fully in Markdown.
 
-Notes:
-- Emphasize top-line and bottom-line performance.
-- Mention that this slide demonstrates Markdown support in RevealJS.
+---
+Notes: State key performance numbers clearly.
           </textarea>
         </section>
 
-        <!-- Slide 3: Fragments (animated bullet points) -->
+        <!-- Animated (Fragments) -->
         <section>
-          <h2>Key Financial Metrics (with Fragments)</h2>
+          <h2>Key Performance Indicators</h2>
           <ul>
-            <li class="fragment">
-              Revenue: ₹ 1,250 Cr <span>(+12% YoY)</span>
-            </li>
-            <li class="fragment">
-              Operating Profit: ₹ 320 Cr <span>(+9% YoY)</span>
-            </li>
-            <li class="fragment">
-              Net Profit: ₹ 225 Cr <span>(+11% YoY)</span>
-            </li>
-            <li class="fragment">
-              Cost-to-Income Ratio: 46% <span>(improved by 2 p.p.)</span>
-            </li>
+            <li class="fragment">Revenue: ₹1,250 Cr</li>
+            <li class="fragment">Operating Profit: ₹320 Cr</li>
+            <li class="fragment">Net Profit: ₹225 Cr</li>
+            <li class="fragment">ROE Improved to 18%</li>
           </ul>
 
           <aside class="notes">
-            Explain each metric one-by-one as it appears: revenue, operating
-            profit, net profit, and cost-to-income ratio. This shows how
-            fragments can help focus the audience on one point at a time.
+            Present each metric step-by-step as fragments appear.
           </aside>
         </section>
 
-        <!-- Slide 4: Code sample with syntax highlighting -->
+        <!-- Code Highlight Example -->
         <section>
-          <h2>Risk-Adjusted Return – Sample Code</h2>
-          <p>
-            Example Python function for a simple risk-score calculation used in
-            internal analytics:
-          </p>
+          <h2>Python Example: Financial Calculation</h2>
 
           <pre><code class="language-python">
-def risk_adjusted_return(expected_return, risk_free_rate, volatility):
-    """
-    Computes a simplified Sharpe-like ratio.
+def roi(gain, cost):
+    return ((gain - cost) / cost) * 100
 
-    expected_return : float
-        Expected portfolio return (annualized, e.g. 0.12 for 12%)
-    risk_free_rate : float
-        Risk-free rate (e.g. 0.06 for 6%)
-    volatility : float
-        Standard deviation of returns (e.g. 0.18 for 18%)
-
-    Returns
-    -------
-    float
-        Risk-adjusted return measure.
-    """
-    if volatility == 0:
-        return 0.0
-    return (expected_return - risk_free_rate) / volatility
-
-print(risk_adjusted_return(0.12, 0.06, 0.18))
+print(roi(1250, 980))
           </code></pre>
 
           <aside class="notes">
-            Explain that this is a simplified example of a Sharpe ratio-style
-            computation. Highlight that we can embed syntax-highlighted code
-            snippets directly within the presentation for technical audiences.
+            Explain importance of automation in financial reporting.
           </aside>
         </section>
 
-        <!-- Slide 5: Math equations with financial formulas -->
+        <!-- Math / LaTeX -->
         <section>
-          <h2>Core Valuation Formulas (Math Support)</h2>
+          <h2>Financial Formulas</h2>
 
-          <p>Present Value (PV) of a single future cash flow:</p>
+          <p>Present Value:</p>
           <p>
             \[
-              PV = \frac{CF}{(1 + r)^n}
+            PV = \frac{CF}{(1 + r)^n}
             \]
           </p>
 
-          <p>Net Present Value (NPV) of a series of cash flows:</p>
+          <p>Compound Interest:</p>
           <p>
             \[
-              NPV = \sum_{t=0}^{T} \frac{CF_t}{(1 + r)^t}
-            \]
-          </p>
-
-          <p>Basic compound interest formula:</p>
-          <p>
-            \[
-              A = P (1 + r)^n
+            A = P(1 + r)^n
             \]
           </p>
 
           <aside class="notes">
-            Walk through PV, NPV, and compound interest formulas. Relate these
-            to how the institution discounts future earnings and evaluates
-            investment projects.
+            Explain these formulas briefly.
           </aside>
         </section>
 
-        <!-- Slide 6: Closing slide with call-to-action -->
+        <!-- Final Slide -->
         <section>
-          <h2>Questions &amp; Next Steps</h2>
-          <ul>
-            <li class="fragment">Review segment-wise performance.</li>
-            <li class="fragment">Discuss risk outlook and capital adequacy.</li>
-            <li class="fragment">Align on guidance for the next quarter.</li>
-          </ul>
+          <h2>Thank You</h2>
+          <p>Questions?</p>
 
-          <p class="fragment">
-            Contact:
-            <strong>22f2000167@ds.study.iitm.ac.in</strong>
-          </p>
+          <p><strong>Contact: 22f2000167@ds.study.iitm.ac.in</strong></p>
 
           <aside class="notes">
-            Invite questions from stakeholders and mention that the complete
-            deck will be shared as a GitHub Pages link, demonstrating modern
-            web-based presentation delivery.
+            Closing slide.
           </aside>
         </section>
       </div>
     </div>
 
-    <!-- RevealJS core JS -->
+    <!-- Reveal Core JS -->
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
 
-    <!-- Plugins: Markdown, Highlight, Math, Notes -->
+    <!-- Plugins -->
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/markdown/markdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/math/math.js"></script>
@@ -193,17 +138,7 @@ print(risk_adjusted_return(0.12, 0.06, 0.18))
       Reveal.initialize({
         hash: true,
         slideNumber: true,
-        plugins: [
-          RevealMarkdown,
-          RevealHighlight,
-          RevealMath.KaTeX,
-          RevealNotes
-        ],
-        // Optional math configuration
-        math: {
-          // Using KaTeX via CDN inside the plugin
-          // Default settings are OK for this example
-        }
+        plugins: [RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes]
       });
     </script>
   </body>
