@@ -32,49 +32,52 @@
           <p><strong>Name:</strong> Shubhangi Sharma</p>
 
           <!-- Required visible email -->
-          <p><strong>Email: 22f2000167@ds.study.iitm.ac.in</strong></p>
+          <p style="font-size: 22px;">
+            <strong>Email: 22f2000167@ds.study.iitm.ac.in</strong>
+          </p>
 
           <aside class="notes">
-            Introduce yourself and explain purpose of this report.
+            Introduction slide — mention your role and intention of this presentation.
           </aside>
         </section>
 
         <!-- Markdown Slide -->
         <section data-markdown>
-          <textarea data-template>
+<textarea data-template>
 ## 📌 Business Snapshot (Markdown Slide)
 
 - Revenue Growth: **12% YoY**
 - Net Profit: **₹225 Cr**
-- EPS Increased: **₹23.5**
+- Earnings Per Share: **₹23.5**
 - Strong Market Confidence  
-- Improved Operational Efficiency
+- Operational Efficiency Improved
+- **Contact: 22f2000167@ds.study.iitm.ac.in**
 
-> This slide is written fully in Markdown.
+> This slide is written in Markdown.
 
 ---
-Notes: State key performance numbers clearly.
-          </textarea>
+Notes: Highlight key growth numbers for stakeholders.
+</textarea>
         </section>
 
         <!-- Animated (Fragments) -->
         <section>
-          <h2>Key Performance Indicators</h2>
+          <h2>Key Financial Indicators</h2>
           <ul>
             <li class="fragment">Revenue: ₹1,250 Cr</li>
             <li class="fragment">Operating Profit: ₹320 Cr</li>
             <li class="fragment">Net Profit: ₹225 Cr</li>
-            <li class="fragment">ROE Improved to 18%</li>
+            <li class="fragment">Return on Equity (ROE): 18%</li>
           </ul>
 
           <aside class="notes">
-            Present each metric step-by-step as fragments appear.
+            Explain meaning and relevance of each KPI.
           </aside>
         </section>
 
         <!-- Code Highlight Example -->
         <section>
-          <h2>Python Example: Financial Calculation</h2>
+          <h2>Python Example: ROI Calculation</h2>
 
           <pre><code class="language-python">
 def roi(gain, cost):
@@ -84,7 +87,7 @@ print(roi(1250, 980))
           </code></pre>
 
           <aside class="notes">
-            Explain importance of automation in financial reporting.
+            Demonstrate automation potential in financial reporting.
           </aside>
         </section>
 
@@ -92,10 +95,10 @@ print(roi(1250, 980))
         <section>
           <h2>Financial Formulas</h2>
 
-          <p>Present Value:</p>
+          <p>Net Present Value (NPV):</p>
           <p>
             \[
-            PV = \frac{CF}{(1 + r)^n}
+            NPV = \sum_{t=1}^{n} \frac{CF_t}{(1+r)^t}
             \]
           </p>
 
@@ -107,7 +110,7 @@ print(roi(1250, 980))
           </p>
 
           <aside class="notes">
-            Explain these formulas briefly.
+            Explain how valuation helps decision making.
           </aside>
         </section>
 
@@ -116,12 +119,15 @@ print(roi(1250, 980))
           <h2>Thank You</h2>
           <p>Questions?</p>
 
-          <p><strong>Contact: 22f2000167@ds.study.iitm.ac.in</strong></p>
+          <p style="font-size: 22px;">
+            <strong>Contact: 22f2000167@ds.study.iitm.ac.in</strong>
+          </p>
 
           <aside class="notes">
-            Closing slide.
+            Close by inviting discussion or feedback.
           </aside>
         </section>
+
       </div>
     </div>
 
@@ -138,7 +144,12 @@ print(roi(1250, 980))
       Reveal.initialize({
         hash: true,
         slideNumber: true,
-        plugins: [RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes]
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealMath.KaTeX,
+          RevealNotes
+        ]
       });
     </script>
   </body>
